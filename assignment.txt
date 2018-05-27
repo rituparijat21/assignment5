@@ -1,0 +1,101 @@
+1:
+year = int(input("enter the year"))
+if year % 4 == 0:
+    if year % 100 == 0:
+        if year % 400 == 0:
+            print("{0} is a leap year".format(year))
+        else:
+            print("{0} is not a leap year".format(year))
+    else:
+        print("{0} is  a leap year".format(year))
+else:
+    print("{0} is not a leap year".format(year))
+
+
+
+
+2:
+
+a = int(input("enter the length"))
+b = int(input("enter the breadth"))
+c = int(input("enter the length"))
+d = int(input("enter the length"))
+if a == b == c == d:
+    print("its a square")
+elif a == b and c == d:
+    print("its a rectangle")
+elif a == d and c == b:
+    print("its a rectangle")
+elif a == c and d == b:
+    print("its a rectangle")
+else:
+    print("none")
+
+
+
+
+
+3:	number1 = int(input('Enter First age : '))
+	number2 = int(input('Enter Second age : '))
+	number3 = int(input('Enter Third age : '))
+	
+	
+	def largest(num1, num2, num3):
+	    if (num1 > num2) and (num1 > num3):
+	        largest_num = num1
+	    elif (num2 > num1) and (num2 > num3):
+	        largest_num = num2
+	    else:
+	        largest_num = num3
+	    print("The largest of the 3 numbers is : ", largest_num)
+	
+	
+	def smallest(num1, num2, num3):
+	    if (num1 < num2) and (num1 < num3):
+	        smallest_num = num1
+	    elif (num2 < num1) and (num2 < num3):
+	        smallest_num = num2
+	    else:
+	        smallest_num = num3
+	    print("The smallest of the 3 numbers is : ", smallest_num)
+
+	largest(number1, number2, number3)
+	smallest(number1, number2, number3)
+
+
+
+
+4:    sex=input("enter sex(M or F)")
+      ms=input("enter material status(Y or N)")
+      age=int(input("enter the age of employee"))
+      if sex=='F':
+          print("she will work in urban area")
+      elif (sex=='M') and ((age>20) and (age<40)):
+          print("he may work in anywhere")
+      elif (sex=='M') and ((age>40) and (age<60)):
+          print("he will work in urban areas only")
+      else:
+          print("error")
+ 
+                    
+
+
+5:    quantity=int(input("enter the quantity of purchase"))
+      cost=float(quantity*100)
+      print("initial cost of {0} items={1}".format(quantity,cost))
+      if cost>1000:
+          print("giving 10% discount")
+          cost=cost*0.9
+      else:
+          print("No discount given")
+      print("Total cost={}".format(cost)) 
+
+
+
+
+
+
+
+ 
+
+
